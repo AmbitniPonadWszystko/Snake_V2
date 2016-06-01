@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" opacity="0.87" prefHeight="187.0" prefWidth="189.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serverfx.ServerFx">
+   <children>
+      <Label layoutX="10.0" text="Serwer">
+         <font>
+            <Font name="Comic Sans MS Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="60.0" prefHeight="31.0" prefWidth="57.0" text="Port:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="portTextField" layoutX="76.0" layoutY="68.0" prefHeight="25.0" prefWidth="74.0" text="50050" />
+      <Button fx:id="okButton" layoutX="19.0" layoutY="139.0" mnemonicParsing="false" onAction="#connectAction" prefHeight="25.0" prefWidth="74.0" text="OK" />
+      <Button fx:id="anulujButton" layoutX="120.0" layoutY="139.0" mnemonicParsing="false" onAction="#anulujAction" text="Anuluj" />
+      <Label fx:id="serverLabel" layoutX="39.0" layoutY="101.0" text="Serwer działa...." visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
